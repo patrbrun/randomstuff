@@ -9,7 +9,7 @@ GPIO.setup(led, GPIO.OUT)
 GPIO.output(led, True)
 but="<form method=\"get\" action=\"/on\"><button type=\"submit\">on fukka</button></form><form method=\"get\" action=\"/off\"><button type=\"submit\">off fukka</button></form>"
 
-def simple_app(env, start_response):
+def complicated_app(env, start_response):
     status = '200 OK'
     headers = [('Content-type', 'text/html')]
     start_response(status, headers)
